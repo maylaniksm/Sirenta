@@ -43,7 +43,7 @@ export default function Login() {
 
                 </div >
             </div >
-            <div className="h-32 md:h-auto md:w-1/2 bg-primary-light" >
+            <div className="h-32 md:h-auto md:w-1/2 bg-bgLight" >
                 <img src="/login.png" alt="" />
             </div >
 

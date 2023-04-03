@@ -48,7 +48,7 @@ export default function Dashboard() {
 
             <div className="p-10 sm:ml-64 text-gray-600">
                 <h1 className="text-2xl font-bold  mb-10">Dashboard</h1>
-                <div className="flex bg-primary-light px-5 py-8 font-semibold justify-between">
+                <div className="flex bg-bgLight px-5 py-8 font-semibold justify-between">
                     <div>
                         <h1>Halo, Prince Sarah Connor</h1>
                         <p className="font-light">Selamat datang di sistem rekrutmen Asisten Laboratorium Informatika UMM</p>
@@ -66,7 +66,7 @@ export default function Dashboard() {
                     </div>
                     <div className="w-1/4">
                         <h1>Pengaduan</h1>
-                        <div className="bg-primary-light w-full h-40 rounded"> </div>
+                        <div className="bg-bgLight w-full h-40 rounded"> </div>
                     </div>
                 </div>
             </div>

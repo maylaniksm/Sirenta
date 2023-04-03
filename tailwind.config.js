@@ -10,6 +10,9 @@ module.exports = {
   plugins: [],
   theme: {
     extend: {
+      fontFamily: {
+        'body': ["Poppins"]
+      },
       colors: {
         primary: {
           DEFAULT: '#FF6600',

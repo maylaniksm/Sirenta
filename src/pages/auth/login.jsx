@@ -1,6 +1,6 @@
 export default function Login() {
     return (
-        <div className="h-screen flex flex-col md:flex-row" >
+        <div className="h-screen font-body flex flex-col md:flex-row" >
             <div className="flex items-center justify-center p-3 px-20 sm:p-12 md:w-1/2" >
                 <div className="w-full" >
                     <div className="flex justify-center" >

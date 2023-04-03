@@ -14,11 +14,11 @@ module.exports = {
         'body': ["Poppins"]
       },
       colors: {
-        primary: {
-          DEFAULT: '#FF6600',
-          light: 'rgba(240, 173, 78, 0.2)'
-        },
-      }
-    },
-  }
+        'primary': '#FF6600',
+        'secondary': '#F0AD4E',
+        'third': '#4D4E50',
+        'bgLight': '#FCEFDC'      // light: 'rgba(240, 173, 78, 0.2)'
+      },
+    }
+  },
 }

@@ -5,8 +5,8 @@ import {
   RouterProvider,
 } from "react-router-dom";
 import './index.css';
-import Login from './routes/login';
-import Dashboard from './routes/dashboard';
+import Login from './pages/auth/login';
+import Dashboard from './pages/dashboard/dashboard';
 import reportWebVitals from './reportWebVitals';
 
 const router = createBrowserRouter([

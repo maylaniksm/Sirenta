@@ -5,20 +5,10 @@ import {
   RouterProvider,
 } from "react-router-dom";
 import './index.css';
-import Login from './pages/auth/login';
-import Dashboard from './pages/dashboard/dashboard';
 import reportWebVitals from './reportWebVitals';
+import routes from './routes/index'
 
-const router = createBrowserRouter([
-  {
-    path: "/",
-    element: <Login />,
-  },
-  {
-    path: "/dashboard",
-    element: <Dashboard />,
-  },
-]);
+const router = createBrowserRouter(routes);
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>

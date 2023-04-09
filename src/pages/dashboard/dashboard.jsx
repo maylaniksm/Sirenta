@@ -15,11 +15,13 @@ export default function Dashboard() {
                                     <div className="flex justify-center w-full">
                                         <img src="/profile.png" className="w-1/3 mt-10 block" alt="" srcset="" />
                                     </div>
-                                    Prince Sarah Connor
+                                    Septin Dwi Kurnia
                                     <br />
                                     <span className="font-extralight">
-                                        202510370311295
+                                        202210370311320
                                     </span>
+                                    <a href="/"><button className="block w-full px-4 py-2 mt-4 text-sm font-medium leading-4 text-center text-white transition-colors duration-150 bg-primary border border-transparent rounded-lg focus:outline-none focus:shadow-outline-blue">
+                                        Log Out </button></a>
                                 </a>
                             </div>
                         </li>
@@ -30,7 +32,7 @@ export default function Dashboard() {
                             </a>
                         </li>
                         <li>
-                            <a href="#" class="flex items-center p-2 text-gray-600 rounded-lg  hover:bg-gray-100">
+                            <a href="dashboard/progress" class="flex items-center p-2 text-gray-600 rounded-lg  hover:bg-gray-100">
                                 <svg aria-hidden="true" class="flex-shrink-0 w-6 h-6 text-gray-500 transition duration-75 dark:text-gray-400 group-hover:text-gray-900 dark:group-hover:text-white" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M5 3a2 2 0 00-2 2v2a2 2 0 002 2h2a2 2 0 002-2V5a2 2 0 00-2-2H5zM5 11a2 2 0 00-2 2v2a2 2 0 002 2h2a2 2 0 002-2v-2a2 2 0 00-2-2H5zM11 5a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2V5zM11 13a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2v-2z"></path></svg>
                                 <span class="flex-1 ml-3 whitespace-nowrap">Progress</span>
                             </a>
@@ -50,7 +52,7 @@ export default function Dashboard() {
                 <h1 className="text-2xl font-bold  mb-10">Dashboard</h1>
                 <div className="flex bg-bgLight px-5 py-8 font-semibold justify-between">
                     <div>
-                        <h1>Halo, Prince Sarah Connor</h1>
+                        <h1>Halo, Septin Dwi Kurnia</h1>
                         <p className="font-light">Selamat datang di sistem rekrutmen Asisten Laboratorium Informatika UMM</p>
                     </div>
                     <img src="./Cross-platform software-rafiki 1.png" className="w-48" alt="" srcset="" />

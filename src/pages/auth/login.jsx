@@ -34,7 +34,7 @@ export default function Login() {
 
                     <button
                         className="block w-full px-4 py-2 mt-4 text-sm font-medium leading-5 text-center text-white transition-colors duration-150 bg-primary border border-transparent rounded-lg focus:outline-none focus:shadow-outline-blue"
-                        href="#" >
+                        href="dashboard" >
                         Log in
                     </button >
                     <p className="mt-4 text-center font-extralight" >

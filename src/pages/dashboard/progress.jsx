@@ -15,13 +15,11 @@ export default function DashboardProgress() {
                                     <div className="flex justify-center w-full">
                                         <img src="/profile.png" className="w-1/3 mt-10 block" alt="" srcset="" />
                                     </div>
-                                    Septin Dwi Kurnia
+                                    Prince Sarah Connor
                                     <br />
                                     <span className="font-extralight">
-                                        202210370311320
+                                        202510370311295
                                     </span>
-                                    <a href="/"><button className="block w-full px-4 py-2 mt-4 text-sm font-medium leading-4 text-center text-white transition-colors duration-150 bg-primary border border-transparent rounded-lg focus:outline-none focus:shadow-outline-blue">
-                                        Log Out </button></a>
                                 </a>
                             </div>
                         </li>
@@ -52,7 +50,7 @@ export default function DashboardProgress() {
                 <h1 className="text-2xl font-bold  mb-10">Dashboard</h1>
                 <div className="flex bg-bgLight px-5 py-8 font-semibold justify-between">
                     <div>
-                        <h1>Halo, Septin Dwi Kurnia</h1>
+                        <h1>Halo, Prince Sarah Connor</h1>
                         <p className="font-light">Selamat datang di sistem rekrutmen Asisten Laboratorium Informatika UMM</p>
                     </div>
                     <img src="/Cross-platform software-rafiki 1.png" className="w-48" alt="" srcset="" />
@@ -68,15 +66,8 @@ export default function DashboardProgress() {
                                 <h1>Fase Saat Ini</h1>
                             </div>
                         </div>
-                    </div>
-                    <div className="w-1/4">
-                        <h1>Pengaduan</h1>
-                        <div className="bg-bgLight w-full h-40 rounded"> </div>
-                    </div>
-                </div>
-                <div className="flex py-8 font-semibold justify-between">
+                        <div className="flex py-8 font-semibold justify-between">
                     <div className="w-3/4 pr-5">
-                        <h1>Informasi Pendaftaran</h1>
                         <div className="flex bg-bgLight px-5 py-8 font-semibold ">
                             <div className="flex items-center">
                                 <img src="/Group 9.png" className="w-12" alt="" srcset="" />
@@ -86,11 +77,14 @@ export default function DashboardProgress() {
                             </div>
                         </div>
                     </div>
+                </div>
+                    </div>
                     <div className="w-1/4">
                         <h1>Pengaduan</h1>
                         <div className="bg-bgLight w-full h-40 rounded"> </div>
                     </div>
                 </div>
+               
             </div>
         </>
     )

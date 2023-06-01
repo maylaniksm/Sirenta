@@ -7,6 +7,8 @@ import Tahap2 from '../pages/progress/tahap2';
 import Tahap3 from '../pages/progress/tahap3';
 import Pendaftaran from '../pages/progress/pendaftaran';
 import Pengaduan from '../pages/pengaduan/pengaduan';
+import Quiz from '../pages/quiz/quiz';
+import QuizProgress from '../pages/quiz/quiz-progress';
 
 const Routes = [
   {
@@ -44,6 +46,14 @@ const Routes = [
   {
     path: "/pengaduan/pengaduan",
     element: <Pengaduan />,
+  },
+  {
+    path: "/quiz",
+    element: <Quiz />,
+  },
+  {
+    path: "/quiz/progress",
+    element: <QuizProgress />,
   },
 ]
 export default Routes;

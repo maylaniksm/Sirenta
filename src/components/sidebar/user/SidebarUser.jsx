@@ -89,7 +89,7 @@ function SidebarUser(props) {
                                         clip-rule="evenodd" 
                                     />
                                 </svg>
-                                <span className={isActiveText("progress")}>Progress</span>
+                                <span className={isActiveText("progress")}>Pendaftaran</span>
                             </NavLink>
                         </div>
                         <div>

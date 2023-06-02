@@ -1,11 +1,11 @@
 import Login from '../pages/auth/login';
-import Dashboard from '../pages/dashboard/dashboard';
+import Dashboard from '../pages/dashboard/Dashboard';
 import DashboardProgress from '../pages/dashboard/progress';
 import CloseRecruitment from '../pages/dashboard/closeRecruitment';
 import Tahap1 from '../pages/progress/tahap1';
 import Tahap2 from '../pages/progress/tahap2';
 import Tahap3 from '../pages/progress/tahap3';
-import Pendaftaran from '../pages/progress/pendaftaran';
+import Pendaftaran from '../pages/progress/Pendaftaran';
 import Pengaduan from '../pages/pengaduan/pengaduan';
 import Quiz from '../pages/quiz/quiz';
 import QuizProgress from '../pages/quiz/quiz-progress';
@@ -40,11 +40,11 @@ const Routes = [
     element: <Tahap3 />,
   },
   {
-    path: "/progress/pendaftaran",
+    path: "/progress/",
     element: <Pendaftaran />,
   },
   {
-    path: "/pengaduan/pengaduan",
+    path: "/pengaduan",
     element: <Pengaduan />,
   },
   {

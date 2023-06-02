@@ -14,7 +14,9 @@ export default function Dashboard() {
                     <div class="md:w-3/4 text-left">
                         <div>
                             <div className="mb-3">
-                                <h1 className="text-xl font-semibold">Informasi Pendaftaran</h1>
+                                <h1 className="text-xl font-semibold">
+                                    Informasi Pendaftaran
+                                </h1>
                             </div>
                             <center>
                                 <img src="/No data-pana 1.png" className="w-64" alt="" srcset="" />

@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import { RadioGroup } from '@headlessui/react'
-
+import ButtonPrimary from "../../components/buttons/ButtonPrimary"
 
 export default function Pendaftaran() {
   let [kelamin, setKelamin] = useState('L')
@@ -16,89 +16,109 @@ export default function Pendaftaran() {
                       <div className="flex justify-center my-5 w-full">
                           <div className="border-solid border-2 border-primary p-1 px-4 rounded text-center">Petunjuk Pengisian</div>
                       </div>
-                      <div className="flex">
-                          <div className="w-1/2 pr-2">
+                        <div className="grid gap-5 mt-5 md:grid-cols-2">
                               <div>
-                                  <label className="block">Nama Lengkap</label>
-                                  <input type="text" className="bg-gray-200 p-2 rounded-lg px-4 w-full" value={"anjai"} />
+                                  <label className="block text-sm font-semibold">Nama Lengkap</label>
+                                  <div className="bg-gray-200 p-2 rounded-lg px-4 w-full cursor-not-allowed">
+                                    <h1 className="font-semibold text-sm">
+                                        Benjamin
+                                    </h1>
+                                  </div>
                               </div>
                               <div>
-                                  <label className="block">Angkatan</label>
-                                  <input type="text" className="bg-gray-200 p-2 rounded-lg px-4 w-full" value={"2020"} />
+                                  <label className="block text-sm font-semibold">Nomor Induk Mahasiswa</label>
+                                  <div className="bg-gray-200 p-2 rounded-lg px-4 w-full cursor-not-allowed">
+                                    <h1 className="font-semibold text-sm">
+                                        124134124
+                                    </h1>
+                                  </div>
                               </div>
                               <div>
-                                  <label className="block">No Telp Aktif</label>
-                                  <input type="text" className="bg-gray-200 p-2 rounded-lg px-4 w-full" value={"2030"} />
+                                  <label className="block text-sm font-semibold">Angkatan</label>
+                                  <div className="bg-gray-200 p-2 rounded-lg px-4 w-full cursor-not-allowed">
+                                    <h1 className="font-semibold text-sm">
+                                        23
+                                    </h1>
+                                  </div>
                               </div>
                               <div>
-                                  <label className="block">Jenis Kelamin</label>
-                                  <RadioGroup as="div" className="mt-2 flex justify-around w-full" value={kelamin} onChange={setKelamin}>
-                                    <RadioGroup.Option value="L">
-                                      {({ checked }) => (
-                                        <span className={checked ? 'p-2 rounded-lg text-white bg-primary' : 'p-2 rounded-lg border-solid border-2 border-primary'}>Laki - laki</span>
-                                      )}
-                                    </RadioGroup.Option>
-                                    <RadioGroup.Option value="P">
-                                      {({ checked }) => (
-                                        <span className={checked ? 'p-2 rounded-lg text-white bg-primary' : 'p-2 rounded-lg border-solid border-2 border-primary'}>Perempuan</span>
-                                      )}
-                                    </RadioGroup.Option>
+                                  <label className="block text-sm font-semibold">Email</label>
+                                  <div className="bg-gray-200 p-2 rounded-lg px-4 w-full cursor-not-allowed">
+                                    <h1 className="font-semibold text-sm">
+                                        Benjamin@email.com
+                                    </h1>
+                                  </div>
+                              </div>
+                              <div>
+                                  <label className="block text-sm font-semibold">No Telp Aktif</label>
+                                  <div className="bg-gray-200 p-2 rounded-lg px-4 w-full cursor-not-allowed">
+                                    <h1 className="font-semibold text-sm">
+                                        213213123123
+                                    </h1>
+                                  </div>
+                              </div>
+                              <div>
+                                  <label className="block text-sm font-semibold">No Whatsapp</label>
+                                  <input type="text" className="border-solid border-2 border-black p-2 font-semibold text-sm rounded-lg px-4 w-full" placeholder='081000000' />
+                              </div>
+                              <div>
+                                  <label className="block text-sm font-semibold">Jenis Kelamin</label>
+                                  <RadioGroup as="div" className="mt-2 flex justify-start" value={kelamin} onChange={setKelamin}>
+                                    <div className="cursor-pointer mr-3">
+                                        <RadioGroup.Option value="L">
+                                        {({ checked }) => (
+                                            <span className={checked ? 'p-2 rounded-lg text-white bg-primary' : 'p-2 rounded-lg border-solid border-2 border-primary'}>Laki - laki</span>
+                                        )}
+                                        </RadioGroup.Option>
+                                    </div>
+                                    <div className="cursor-pointer">
+                                        <RadioGroup.Option value="P">
+                                        {({ checked }) => (
+                                            <span className={checked ? 'p-2 rounded-lg text-white bg-primary' : 'p-2 rounded-lg border-solid border-2 border-primary'}>Perempuan</span>
+                                        )}
+                                        </RadioGroup.Option>
+                                    </div>
                                   </RadioGroup>
                               </div>
-
-                          </div>
-                          <div className="w-1/2">
                               <div>
-                                  <label className="block">Nomor Induk Mahasiswa</label>
-                                  <input type="text" className="bg-gray-200 p-2 rounded-lg px-4 w-full" value={"421151525ßß"} />
-                              </div>
-                              <div>
-                                  <label className="block">Email</label>
-                                  <input type="email s" className="bg-gray-200 p-2 rounded-lg px-4 w-full" value={"email@gmail.com"} />
-                              </div>
-                              <div>
-                                  <label className="block">No Whatsapp</label>
-                                  <input type="text" className="border-solid border-2 border-black p-2 rounded-lg px-4 w-full" value={"086273712323"} />
-                              </div>
-                              <div>
-                                  <label className="block">Lampiran CV .pdf (max 1mb)</label>
+                                  <label className="block text-sm font-semibold">Lampiran CV .pdf (max 1mb)</label>
                                   <input type="file" className="bg-gray-200 p-2 rounded-lg px-4 w-full" />
                               </div>
                           </div>
-                      </div>
-                      <div className="w-full">
-                          <h1>Skill Kamu</h1>
-                          <div className="w-full flex">
+
+                      <div className="w-full mt-5">
+                          <h1 className="block text-sm font-semibold">Skill Kamu</h1>
+                          <div className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-4 gap-5">
                               <div className="border-solid border-2 border-black p-2 rounded-lg px-4">
                                   <input type="checkbox" />
-                                  <label >Pemrograman Web</label>
+                                  <label className="ml-1" >Pemrograman Web</label>
                               </div>
                               <div className="border-solid border-2 border-black p-2 rounded-lg px-4">
                                   <input type="checkbox" />
-                                  <label >Pemrograman Mobile</label>
+                                  <label className="ml-1" >Pemrograman Mobile</label>
                               </div>
                               <div className="border-solid border-2 border-black p-2 rounded-lg px-4">
                                   <input type="checkbox" />
-                                  <label >Desain Grafis</label>
+                                  <label className="ml-1" >Desain Grafis</label>
                               </div>
                               <div className="border-solid border-2 border-black p-2 rounded-lg px-4">
                                   <input type="checkbox" />
-                                  <label >Videografis</label>
+                                  <label className="ml-1" >Videografis</label>
                               </div>
                           </div>
                       </div>
-                      <div className="w-full">
-                          <h1>Jelaskan Motivasi kamu menjadi asisten laboratorium</h1>
-                          <textarea type="text" className="border-solid border-2 border-black p-2 rounded-lg px-4 w-full" value={"gabut"} >
-                          </textarea>
+                      <div className="w-full mt-5">
+                          <h1 className="text-sm font-semibold">Jelaskan Motivasi kamu menjadi asisten laboratorium</h1>
+                          <textarea placeholder='Masukkan text' className="border-solid border-2 border-black p-2 rounded-lg px-4 w-full text-sm font-semibold" />
                       </div>
-                      <div className="w-full">
-                          <h1>Jelaskan ide kreatif kamu</h1>
-                          <textarea type="text" className="border-solid border-2 border-black p-2 rounded-lg px-4 w-full" value={"tidur"} >
-                          </textarea>
+                      <div className="w-full mt-3">
+                          <h1 className="text-sm font-semibold">Jelaskan ide kreatif kamu</h1>
+                          <textarea placeholder='Masukkan text' className="border-solid border-2 border-black p-2 rounded-lg px-4 w-full text-sm font-semibold" />
                       </div>
                       <div className="flex justify-around w-full">
-                          <button className="p-2 rounded-lg text-white bg-primary">Kirim</button>
+                            <ButtonPrimary>
+                                Simpan
+                            </ButtonPrimary>
                       </div>
                   </div>
               </div>

@@ -12,7 +12,9 @@ export default function Pendaftaran() {
 
               <div className="pr-5 py-8">
                   <div>
-                      <h1>Form pendaftaran reqruitment asistan 2024</h1>
+                      <h1 className="text-xl font-semibold">
+                        Form pendaftaran reqruitment asistan 2024
+                      </h1>
                       <div className="flex justify-center my-5 w-full">
                           <div className="border-solid border-2 border-primary p-1 px-4 rounded text-center">Petunjuk Pengisian</div>
                       </div>
@@ -59,7 +61,7 @@ export default function Pendaftaran() {
                               </div>
                               <div>
                                   <label className="block text-sm font-semibold">No Whatsapp</label>
-                                  <input type="text" className="border-solid border-2 border-black p-2 font-semibold text-sm rounded-lg px-4 w-full" placeholder='081000000' />
+                                  <input type="text" className="border-solid border border-gray-400 p-2 font-semibold text-sm rounded-lg px-4 w-full" placeholder='081000000' />
                               </div>
                               <div>
                                   <label className="block text-sm font-semibold">Jenis Kelamin</label>
@@ -89,19 +91,19 @@ export default function Pendaftaran() {
                       <div className="w-full mt-5">
                           <h1 className="block text-sm font-semibold">Skill Kamu</h1>
                           <div className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-4 gap-5">
-                              <div className="border-solid border-2 border-black p-2 rounded-lg px-4">
+                              <div className="border-solid border border-gray-400 p-2 rounded-lg px-4">
                                   <input type="checkbox" />
                                   <label className="ml-1" >Pemrograman Web</label>
                               </div>
-                              <div className="border-solid border-2 border-black p-2 rounded-lg px-4">
+                              <div className="border-solid border border-gray-400 p-2 rounded-lg px-4">
                                   <input type="checkbox" />
                                   <label className="ml-1" >Pemrograman Mobile</label>
                               </div>
-                              <div className="border-solid border-2 border-black p-2 rounded-lg px-4">
+                              <div className="border-solid border border-gray-400 p-2 rounded-lg px-4">
                                   <input type="checkbox" />
                                   <label className="ml-1" >Desain Grafis</label>
                               </div>
-                              <div className="border-solid border-2 border-black p-2 rounded-lg px-4">
+                              <div className="border-solid border border-gray-400 p-2 rounded-lg px-4">
                                   <input type="checkbox" />
                                   <label className="ml-1" >Videografis</label>
                               </div>
@@ -109,11 +111,19 @@ export default function Pendaftaran() {
                       </div>
                       <div className="w-full mt-5">
                           <h1 className="text-sm font-semibold">Jelaskan Motivasi kamu menjadi asisten laboratorium</h1>
-                          <textarea placeholder='Masukkan text' className="border-solid border-2 border-black p-2 rounded-lg px-4 w-full text-sm font-semibold" />
+                          <textarea 
+                            rows="4"
+                            autoComplete='off'
+                            placeholder='Masukkan text'
+                            className="border-solid border border-gray-400 p-2 rounded-lg px-4 w-full text-sm font-semibold" />
                       </div>
                       <div className="w-full mt-3">
                           <h1 className="text-sm font-semibold">Jelaskan ide kreatif kamu</h1>
-                          <textarea placeholder='Masukkan text' className="border-solid border-2 border-black p-2 rounded-lg px-4 w-full text-sm font-semibold" />
+                          <textarea 
+                            rows="4"
+                            autoComplete='off'
+                            placeholder='Masukkan text' 
+                            className="border-solid border border-gray-400 p-2 rounded-lg px-4 w-full text-sm font-semibold" />
                       </div>
                       <div className="flex justify-around w-full">
                             <ButtonPrimary>

@@ -60,31 +60,64 @@ export default function DashboardProgress() {
                         <h1>Informasi Pendaftaran</h1>
                         <div className="flex bg-bgLight px-5 py-8 font-semibold ">
                             <div className="flex items-center">
-                                <img src="/Group 9.png" className="w-12" alt="" srcset="" />
+                                <img src="/jam.png" className="w-12" alt="" srcset="" />
                             </div>
                             <div className="ml-5 my-auto">
                                 <h1>Fase Saat Ini</h1>
                             </div>
+                            <div className="ml-auto mt-3 my-auto">
+                                <h1><b>Tahap 3</b></h1>
+                            </div>
                         </div>
-                        <div className="flex py-8 font-semibold justify-between">
-                    <div className="w-3/4 pr-5">
-                        <div className="flex bg-bgLight px-5 py-8 font-semibold ">
+                        <div className="flex bg-bgLight px-5 py-8 mt-5 font-semibold ">
                             <div className="flex items-center">
-                                <img src="/Group 9.png" className="w-12" alt="" srcset="" />
+                                <img src="/jam.png" className="w-12" alt="" srcset="" />
                             </div>
                             <div className="ml-5 my-auto">
-                                <h1>Progress seleksi anda</h1>
+                                <h1>Progress seleksi Anda</h1>
+                            </div>
+                            <div className="ml-auto mt-3 my-auto">
+                                <h1>Lihat {">"}</h1>
                             </div>
                         </div>
-                    </div>
-                </div>
+                        <h1>Progress Pendaftaran</h1>
+                        <table class="table-auto w-full ttable">
+                            <thead>
+                                <tr className="text-left">
+                                    <th>Tahap</th>
+                                    <th>Status</th>
+                                    <th></th>
+                                    <th></th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Tahap 1</td>
+                                    <td><b>Lolos</b></td>
+                                    <td><img src="/centang.png" alt="" srcset="" /></td>
+                                    <td>Detail {">"}</td>
+                                </tr>
+                                <tr>
+                                    <td>Tahap 2</td>
+                                    <td><b>Lolos</b></td>
+                                    <td><img src="/centang.png" alt="" srcset="" /></td>
+                                    <td>Detail {">"}</td>
+                                </tr>
+                                <tr>
+                                    <td>Tahap 3</td>
+                                    <td><b>Tidak Lolos</b></td>
+                                    <td><img src="/silang.png" alt="" srcset="" /></td>
+                                    <td>Detail {">"}</td>
+                                </tr>
+                            </tbody>
+                        </table>
                     </div>
                     <div className="w-1/4">
                         <h1>Pengaduan</h1>
                         <div className="bg-bgLight w-full h-40 rounded"> </div>
                     </div>
                 </div>
-               
+
             </div>
         </>
     )

@@ -37,7 +37,7 @@ export default function Pengaduan() {
                         </li>
                         <li>
                             <a href="#" class="flex items-center p-2 text-gray-600 rounded-lg  hover:bg-gray-100">
-                                <svg aria-hidden="true" class="flex-shrink-0 w-6 h-6 text-gray-500 transition duration-75 dark:text-gray-400 group-hover:text-gray-900 dark:group-hover:text-white" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M5 3a2 2 0 00-2 2v2a2 2 0 002 2h2a2 2 0 002-2V5a2 2 0 00-2-2H5zM5 11a2 2 0 00-2 2v2a2 2 0 002 2h2a2 2 0 002-2v-2a2 2 0 00-2-2H5zM11 5a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2V5zM11 13a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2v-2z"></path></svg>
+                                <svg aria-hidden="true" class="flex-shrink-0 w-6 h-6 text-gray-500 transition duration-75 dark:text-gray-400 group-hover:text-gray-900 dark:group-hover:text-white" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg" ><path d="M5 3a2 2 0 00-2 2v2a2 2 0 002 2h2a2 2 0 002-2V5a2 2 0 00-2-2H5zM5 11a2 2 0 00-2 2v2a2 2 0 002 2h2a2 2 0 002-2v-2a2 2 0 00-2-2H5zM11 5a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2V5zM11 13a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2v-2z" stroke="currentColor" strokeWidth="1"></path></svg>
                                 <span class="flex-1 ml-3 whitespace-nowrap">Pengaduan</span>
                             </a>
                         </li>
@@ -47,39 +47,38 @@ export default function Pengaduan() {
             </aside>
 
             <div className="p-10 sm:ml-64 text-gray-600">
-                <h1 className="text-2xl font-bold  mb-10">Progress</h1>
+                <h1 className="text-2xl font-bold  mb-10">Form Layanan Pengaduan</h1>
 
                 <div className="pr-5 py-8">
                     <div>
-                        <h1>Form Layanan Pengaduan</h1>
                         <div className="flex justify-center my-5 w-full">
                             <div className="border-solid border-2 border-primary p-1 px-4 rounded text-center">Petunjuk Pengaduan</div>
                         </div>
                         <div className="flex">
                             <div className="w-1/2 pr-2">
                                 <div>
-                                    <label className="block">Nama Lengkap</label>
+                                    <label className="block mt-3 font-semibold">Nama Lengkap</label>
                                     <input type="text" className="bg-gray-200 p-2 rounded-lg px-4 w-full" value={"anjai"} />
                                 </div>
                                 <div>
-                                    <label className="block">Angkatan</label>
+                                    <label className="block mt-2 font-semibold">Angkatan</label>
                                     <input type="text" className="bg-gray-200 p-2 rounded-lg px-4 w-full" value={"2020"} />
                                 </div>
                             </div>
-                            <div className="w-1/2">
+                            <div className="w-1/2 px-2">
                                 <div>
-                                    <label className="block">Nomor Induk Mahasiswa</label>
+                                    <label className="block mt-3 font-semibold">Nomor Induk Mahasiswa</label>
                                     <input type="text" className="bg-gray-200 p-2 rounded-lg px-4 w-full" value={"421151525ßß"} />
                                 </div>
                                 <div>
-                                    <label className="block">Email</label>
+                                    <label className="block mt-2 font-semibold">Email</label>
                                     <input type="email s" className="bg-gray-200 p-2 rounded-lg px-4 w-full" value={"email@gmail.com"} />
                                 </div>  
                             </div>
                         </div>
-                        <div className="w-full">
+                        <div className="w-full mt-2 font-semibold">
                             <h1>Pesan Aduan</h1>
-                            <textarea type="text" className="border-solid border-2 border-black p-2 rounded-lg px-4 w-full" value={"gabut"} >
+                            <textarea type="text" className="border-solid border border-gray-300 p-2 rounded-lg px-4 w-full" value={"gabut"} >
                             </textarea>
                         </div>
                         <div className="flex justify-around w-full">

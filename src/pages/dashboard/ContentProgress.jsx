@@ -10,7 +10,7 @@ export default function Progress() {
                 <CardWellcome />
 
                 <div class="flex flex-col md:flex-row mt-10">
-                    <div class="md:w-3/4 text-left mr-5">
+                    <div class="w-full text-left mr-5">
 
                         {/* Informasi Pendafataran */}
                         <div>
@@ -72,12 +72,6 @@ export default function Progress() {
                         </div>
 
 
-                    </div>
-                    <div class="md:w-1/4 text-left mt-5 md:mt-0">
-                        <div>
-                            <h1 className="text-xl font-semibold">Pengaduan</h1>
-                            <div className="mt-3 bg-bgLight w-full h-40 rounded"> </div>
-                        </div>
                     </div>
                 </div>
 

@@ -36,7 +36,7 @@ export default function Pendaftaran() {
                       </div>
 
 
-                      {/* Start of PopUp Modal */}
+                        {/* Start of PopUp Modal */}
                         <Transition appear show={isOpen} as={Fragment}>
                             <Dialog as="div" className="relative z-10" onClose={closeModal}>
                             <Transition.Child
@@ -221,10 +221,10 @@ export default function Pendaftaran() {
                                     placeholder='Masukkan text' 
                                     className="border-solid border border-gray-400 p-2 rounded-lg px-4 w-full text-sm font-semibold" />
                             </div>
-                            <div className="flex justify-around w-full">
-                                    <ButtonPrimary>
-                                        Simpan
-                                    </ButtonPrimary>
+                            <div className="flex justify-end mt-5 w-full">
+                                <ButtonPrimary>
+                                    Simpan
+                                </ButtonPrimary>
                             </div>
                         </form>
                   </div>

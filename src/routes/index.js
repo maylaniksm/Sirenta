@@ -40,7 +40,7 @@ const Routes = [
     element: <Tahap3 />,
   },
   {
-    path: "/progress/",
+    path: "/pendaftaran/",
     element: <Pendaftaran />,
   },
   {

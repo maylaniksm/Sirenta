@@ -11,14 +11,14 @@ function SidebarUser(props) {
 
     function isActiveMenu(name) {
         return props.current === name
-          ? "bg-black rounded-xl group py-2 h-12 "
-          : "hover:bg-gray-100 hover:text-primary group py-2 h-12 rounded-xl ml-25px ";
+          ? "bg-black rounded-xl group py-2 h-auto "
+          : "hover:bg-bgLight hover:text-primary group py-2 h-auto rounded-xl ml-25px ";
       }
     
       function isActiveMenuIcon(name) {
         return props.current === name
           ? "text-primary mr-3 h-6 w-6"
-          : "text-third group-hover:text-primary mr-3 h-6 w-6";
+          : "text-primary group-hover:text-primary mr-3 h-6 w-6";
       }
 
       function isActiveText(name) {
@@ -62,8 +62,8 @@ function SidebarUser(props) {
 
                     {/* Start of Sidebar */}
                     <div className="flex flex-col flex-grow">
-                        <div>
-                            <NavLink to="/dashboard" className="w-full flex items-center pl-7 hover:bg-gray-500" activeClassName={isActiveMenu("dashboard")}>
+                        <div className="h-10 flex items-center hover:bg-bgLight">
+                            <NavLink to="/dashboard" className="w-full flex items-center pl-7" activeClassName={isActiveMenu("dashboard")}>
                                 <svg 
                                     className={isActiveMenuIcon("dashboard")}
                                     xmlns="http://www.w3.org/2000/svg" 
@@ -75,8 +75,8 @@ function SidebarUser(props) {
                                 <span className={isActiveText("dashboard")}>Dashboard</span>
                             </NavLink>
                         </div>
-                        <div>
-                            <NavLink to="/progress" className="w-full flex items-center pl-7 hover:bg-gray-500" activeClassName={isActiveMenu("progress")}>
+                        <div className="h-10 flex items-center hover:bg-bgLight">
+                            <NavLink to="/pendaftaran" className="w-full flex items-center pl-7" activeClassName={isActiveMenu("progress")}>
                                 <svg 
                                     className={isActiveMenuIcon("progress")}
                                     xmlns="http://www.w3.org/2000/svg" 
@@ -92,8 +92,8 @@ function SidebarUser(props) {
                                 <span className={isActiveText("progress")}>Pendaftaran</span>
                             </NavLink>
                         </div>
-                        <div>
-                            <NavLink to="/pengaduan" className="w-full flex items-center pl-7 hover:bg-gray-500" activeClassName={isActiveMenu("pengaduan")}>
+                        <div className="h-10 flex items-center hover:bg-bgLight">
+                            <NavLink to="/pengaduan" className="w-full flex items-center pl-7" activeClassName={isActiveMenu("pengaduan")}>
                                 <svg 
                                     className={isActiveMenuIcon("pengaduan")}
                                     xmlns="http://www.w3.org/2000/svg" 
